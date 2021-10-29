@@ -31,10 +31,17 @@
     color: white;
 }
 
+
+/********* active class **********/
 .left_img_cont div.active{
     opacity: 1;
-   /*  z-index: 1; */
 }
+.thumb_active{
+    border: 4px solid rgb(202, 202, 202);
+}
+/* ***************************** */
+
+
 .img_under_img{
     position: absolute;
     top: 0;
