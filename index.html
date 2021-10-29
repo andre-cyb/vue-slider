@@ -21,10 +21,11 @@
 
             <!-- ricordati di cambiare -->
             <div class="left_img_cont">
-                <div class="img_under_img" v-for="img in contentList">
-                    <img class="img_style " v-bind:src="img.url" alt="">
+                <div class="img_under_img" v-for="img, index in contentList"
+                    :class="index === currentImg ? 'active':'' ">
+                    <img class="img_style " v-bind:src="img.url" v-bind:alt="index">
                     <div class="img_text">
-                        <h3>{{ element }}</h3>
+                        <h3>{{ img.title }}</h3>
                         <p>lorem ipsum</p>
                     </div>
 

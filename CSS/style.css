@@ -21,7 +21,7 @@
     height:100%;
     width: 100%;
     object-fit: cover;
-    opacity: 0;
+    
 }
 
 .img_text{
@@ -31,8 +31,9 @@
     color: white;
 }
 
-.active{
+.left_img_cont div.active{
     opacity: 1;
+   /*  z-index: 1; */
 }
 .img_under_img{
     position: absolute;
@@ -40,4 +41,5 @@
     left: 0;
     right: 0;
     bottom: 0;
+    opacity: 0;
 }
