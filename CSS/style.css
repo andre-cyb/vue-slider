@@ -1,0 +1,43 @@
+.layout_container{
+    width: 1200px!important;
+    display: flex;
+    align-items: stretch;
+    position: relative;
+}
+
+.left_img_cont{
+    position: relative;
+    width: 80%;
+}
+.right_img_cont{
+    width: 20%;
+    
+}
+.right_img_cont div img{
+    width: 100%;
+
+}
+.img_style{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0;
+}
+
+.img_text{
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    color: white;
+}
+
+.active{
+    opacity: 1;
+}
+.img_under_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
