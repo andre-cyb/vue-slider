@@ -41,6 +41,15 @@
                 <div v-for="img, index in contentList" v-bind:class="index === currentImg ? 'thumb_active':''">
                     <img v-bind:src="img.url" alt="" class="">
 
+                    <div class="arrow">
+                        <div class="arrow_up bg-light rounded-circle" @click="funzioneUp">
+                            <i class="fas fa-chevron-up myIconSize"></i>
+                        </div>
+                        <div class="arrow_down bg-light rounded-circle" @click="funzioneDown">
+                            <i class="fas fa-chevron-down myIconSize"></i>
+                        </div>
+
+                    </div>
                 </div>
 
             </div>

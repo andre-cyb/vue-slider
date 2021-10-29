@@ -32,6 +32,25 @@ new Vue({
                 description: 'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
             }
         ],
-        currentImg: 0,
-    }
+        currentImg: 0
+    },
+    methods: {
+        funzioneUp() {
+            let newCurrentImg = this.currentImg - 1;
+            if (newCurrentImg < 0) {
+                newCurrentImg = this.contentList.length - 1;
+            }
+
+            this.currentImg = newCurrentImg;
+        },
+        funzioneDown() {
+            let newCurrentImg = this.currentImg + 1;
+            if (newCurrentImg > this.contentList.length - 1) {
+                newCurrentImg = 0;
+            }
+            this.currentImg = newCurrentImg;
+        }
+
+    },
+
 });
