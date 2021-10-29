@@ -4,7 +4,6 @@ Vue.config.devtools = true;
 new Vue({
     el: "#app",
     data: {
-        element: "ciao",
         contentList: [
             {
                 url: 'img/01.jpg',
@@ -49,8 +48,12 @@ new Vue({
                 newCurrentImg = 0;
             }
             this.currentImg = newCurrentImg;
-        }
-
+        },
     },
+    mounted() {
+        setInterval(() => {
+            this.funzioneDown();
+        }, 7000);
+    }
 
 });
